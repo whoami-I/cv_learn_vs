@@ -6,7 +6,7 @@ using namespace cv;
 
 int main()
 {
-    //Mat_test_main();
-    read_test_main();
+    Mat_test_main();
+    //read_test_main();
     return 0;
 }

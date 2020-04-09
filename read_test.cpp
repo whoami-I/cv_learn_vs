@@ -4,6 +4,10 @@
 using namespace cv;
 using namespace std;
 void read_test_main() {
+    
+}
+
+void showImage() {
     namedWindow("image", WINDOW_KEEPRATIO);
     Mat imgMatrix = imread("img.jpg");
     for (int i = 0; i < imgMatrix.rows; ++i) {
@@ -11,9 +15,13 @@ void read_test_main() {
             uchar* ppixel = imgMatrix.data + i * imgMatrix.step[0] + j * imgMatrix.step[1];
             //(*ppixel+2) = 255;
             //(*(ppixel + 1)) += 100;
-            (*(ppixel+2)) = 255;
+            (*(ppixel + 2)) = 255;
         }
     }
     imshow("image", imgMatrix);
     waitKey(0);
+}
+
+void useOfMat() {
+    Mat m1{};
 }
